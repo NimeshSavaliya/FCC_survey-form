@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for making time for this survey. We appriciate your feedback and
+      will try to make your experience with us better.
+    </p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Full Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your full name"
+          required
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email Address</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your mail address"
+          required
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <label for="Age" id="number-label">Age</label>
+        <input
+          type="number"
+          name="age"
+          min="16"
+          max="80"
+          id="number"
+          placeholder="Your Age"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender</label>
+
+        <label for="male"
+          ><input
+            type="radio"
+            name="gender"
+            id="male"
+            value="male"
+            class="radio"
+          />Male</label
+        >
+
+        <label for="female">
+          <input
+            type="radio"
+            name="gender"
+            id="female"
+            value="female"
+            class="radio"
+          />Female</label
+        >
+
+        <label for="other"
+          ><input
+            type="radio"
+            name="gender"
+            id="other"
+            value="other"
+            class="radio"
+          />Rather Not Say</label
+        >
+      </div>
+      <div class="form-group">
+        <label for="region">Region</label>
+        <select name="region" id="dropdown" class="form-control">
+          <option disabled selected>Select Your Region</option>
+          <option value="MP">MP</option>
+          <option value="gujarat">Gujarat</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Rajasthan">Rajasthan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="experience">How will you describe your experience:</label>
+
+        <label for="res1"
+          ><input
+            type="checkbox"
+            value="easyToUse"
+            name="res1"
+            class="check"
+          />Easy to Use</label
+        >
+
+        <label for="res2">
+          <input
+            type="checkbox"
+            value="userFriend ly"
+            name="res2"
+            class="check"
+          />User Friendly</label
+        >
+
+        <label for="res3">
+          <input type="checkbox" value="clean" name="res3" class="check" />Clean
+          Design</label
+        >
+
+        <label for="res4">
+          <input
+            type="checkbox"
+            value="easyNav"
+            name="res4"
+            class="check"
+          />Easy Navigation</label
+        >
+      </div>
+      <div class="form-group">
+        <label for="suggestion">Suggestion or Comments(optional)</label>
+        <textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="Your Suggestions or Comments"
+          class="textarea"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="btn-submit">Submit</button>
+      </div>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
